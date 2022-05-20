@@ -1,0 +1,282 @@
+body {
+    font-family: "Work Sans", sans-serif;
+    line-height: 1.5;
+  }
+  
+.text-lg {
+  font-size: 19px !important;
+  color: #8e8aad !important;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #5941f0;
+  border-color: transparent;
+  transition: background-color 0.2s;
+}
+
+.btn-success {
+  color: #fff;
+  background-color: #35bb78;
+  border-color: transparent;
+}
+
+.btn-primary:hover,
+.btn-success:hover{
+  color: #fff;
+  background-color: #0982ec;
+  border-color: transparent;
+}
+
+.btn-outline-primary {
+  color: #6C55F9;
+  border-color: #6C55F9;
+}
+
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: #6C55F9;
+  border-color: #6C55F9;
+}
+
+.btn-outline-success {
+  color: #35bb78;
+  border-color: #35bb78;
+}
+
+.btn-outline-success:hover {
+  color: #fff;
+  background-color: #35bb78;
+  border-color: #35bb78;
+}
+
+.navbar {
+  min-height: 50px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.navbar-brand {
+  margin-left: 10px;
+  color: black;
+  font-size: 1.7em;
+  font-weight: 600;
+}
+
+.navbar-nav .nav-link {
+  color: #0982ec;
+  font-size: 1.12em;
+  transition: all 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover{
+  color: #5941f0;
+}
+
+.navbar-nav .btn {
+  font-size: 1.12em;
+  margin-right: 10px;
+}
+
+.scroll-active{
+  background: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 2.5px 7px;
+  z-index: 1080;
+  transition: all 0.5s;
+}
+
+.fa{
+  font-size: 0.8em;
+}
+
+.nav-item a{ 
+  position: relative;
+  margin-right: 9px;
+}
+
+.nav-item .nav-link::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1.5px;
+  left: 0;
+  bottom: 4px;
+  background: #5941f0;
+  transform: scale(0, 1);
+  transition: transform 0.3s ease;
+}
+
+.nav-item .nav-link:hover::after{
+  transform: scale(1, 1);
+}
+
+.form-control {
+  padding: 8px 15px;
+  height: calc(1.5em + 1.375rem + 2px);
+  border-color: #d6dbd9;
+}
+
+.bg-image {
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-image > * {
+  position: relative;
+  z-index: 10;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(224, 223, 233, 0.7);
+  visibility: hidden;
+  cursor: pointer;
+  transition: all .2s ease;
+  z-index: 1100;
+}
+
+.back-to-top::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: -4px auto;
+  width: 12px;
+  height: 12px;
+  border-top: 2px solid #555;
+  border-right: 2px solid #555;
+  -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.back-to-top:hover {
+  background: #6C55F9;
+}
+
+.back-to-top:hover::after {
+  border-color: #fff;
+}
+
+.page-section {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 40px;
+  overflow: hidden;
+}
+
+.page-banner{
+  margin-top: 80px;
+}
+
+.page-banner .btn{
+  padding: 8px 20px;
+}
+
+@media (max-width: 768px){
+  .navbar-brand{
+    font-size: 1.4em;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1.06em;
+  }
+
+  .navbar-nav .btn {
+    font-size: 1.06em;
+  }
+}
+
+.home-banner .row > *:first-child {
+  padding-left: 8%;
+}
+
+.subhead {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #898798;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.title-section {
+  color: #645F88;
+}
+
+.divider {
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 32px;
+  width: 82px;
+  height: 3px;
+  border-radius: 40px;
+  background-color: #6C55F9;
+}
+
+.btn-split {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 40px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 6px;
+}
+
+.btn-split .fab {
+  display: inline-block;
+  margin-left: 12px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  line-height: 32px;
+  text-align: center;
+  background-color: #fff;
+  color: #6C55F9;
+}
+
+.card-service {
+  display: block;
+  margin: 16px auto;
+  padding: 32px 20px;
+  max-width: 300px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 3px 12px rgba(95, 92, 120, 0.12);
+}
+
+.card-service .header {
+  margin-bottom: 24px;
+}
+
+.card-service p{
+  color: #8e8aad
+}
+
+.todoimg{
+  width: 63.5%;
+}
+
+.chatimg{
+  width: 88.5%;
+}
+
+.aboutimg{
+  width: 100%;
+}
+
+.text-head{
+  font-weight: 600;
+  color: #252525;
+}
+
+
