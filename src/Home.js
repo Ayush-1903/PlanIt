@@ -11,10 +11,10 @@ function Home() {
               <div className="navbar-expand" id="navbarNav">
                 <ul className="navbar-nav">
                   <li className="nav-item">
-                    <a className="nav-link" href="/">Log in <i className="fa fa-arrow-right"></i></a>
+                    <Link to="/login  " className="nav-link" >Log in <i className="fa fa-arrow-right"></i></Link>
                   </li>
                   <li className="nav-item">
-                    <Link to="/signup" className="btn btn-primary" href="/">Sign up</Link>
+                    <Link to="/signup" className="btn btn-primary">Sign up</Link>
                   </li>
                 </ul>
               </div>

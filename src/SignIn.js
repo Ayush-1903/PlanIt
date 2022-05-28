@@ -1,18 +1,8 @@
 import React,{useState} from 'react';
-import { Link } from 'react-router-dom';
 import { GoogleLogin, GoogleLogout} from 'react-google-login';
+import { Link } from 'react-router-dom';
 
-function SignUp(){
-
-    function addName(){
-        document.querySelector('.input-div').classList.add('focus');
-    }
-
-    function remName(){
-        if(document.querySelector('.name').value == ""){
-            document.querySelector('.input-div').classList.remove('focus');
-        }
-    }
+function SignIn(){
 
     function addEmail(){
         document.querySelector('.emails').classList.add('focus');
@@ -52,20 +42,11 @@ function SignUp(){
         <div>
             <div className="main">
                 <div className="img">
-                    <img src="./img/Hello.svg"/>
+                    <img src="./img/SignIn.svg" />
                 </div>
                 <div className="login-content">
                     <form action="index.html">
-                        <h2 className="title">Sign up for your account</h2>
-                        <div className="input-div one">
-                            <div className="i">
-                                    <i className="fas fa-user"></i>
-                            </div>
-                            <div className="div">
-                                    <h5>Username</h5>   
-                                    <input onFocus={addName} onBlur={remName} type="text" className="name"/>
-                            </div>
-                        </div>
+                        <h2 className="title">Log in to PlanIt</h2>
 
                         <div className="input-div one emails">
                             <div className="i">
@@ -87,9 +68,9 @@ function SignUp(){
                             </div>
                         </div>
 
-                        <Link to="/login" className="forgot">Already have an account? Log In</Link>
-                        <Link to="/category" className="sub"><input type="submit" className="bt" value="Sign Up" /></Link>
-                        
+                        <a href="#" className="forgot">Forgot Password?</a>
+                        <input type="submit" className="bt" value="Log In" />
+
                         <h5 className="divide">OR</h5>
 
                         <div className="g-signin2" data-onsuccess="onSignIn" data-theme="dark">
@@ -102,6 +83,9 @@ function SignUp(){
                                         cookiePolicy={'single_host_origin'}
                                 /> : null}
                         </div>
+                        
+                        <hr />
+                        <Link to="/signup" className="newhere">New here? Sign up</Link>
                     </form>
                 </div>  
             </div>
@@ -109,4 +93,4 @@ function SignUp(){
         )
     }
     
-export default SignUp;
+export default SignIn;
