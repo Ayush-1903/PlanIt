@@ -55,7 +55,7 @@ function SignUp(){
                     <img src="./img/Hello.svg"/>
                 </div>
                 <div className="login-content">
-                    <form action="index.html">
+                    <form action="/category">
                         <h2 className="title">Sign up for your account</h2>
                         <div className="input-div one">
                             <div className="i">
@@ -63,7 +63,7 @@ function SignUp(){
                             </div>
                             <div className="div">
                                     <h5>Username</h5>   
-                                    <input onFocus={addName} onBlur={remName} type="text" className="name"/>
+                                    <input onFocus={addName} onBlur={remName} type="text" name="username" className="name" required/>
                             </div>
                         </div>
 
@@ -73,7 +73,7 @@ function SignUp(){
                             </div>
                             <div className="div">
                                     <h5>Email Id</h5>   
-                                    <input onFocus={addEmail} onBlur={remEmail} type="email" className="mail"/>
+                                    <input onFocus={addEmail} onBlur={remEmail} type="email" name="email" className="mail" required/>
                             </div>
                         </div>
 
@@ -83,7 +83,7 @@ function SignUp(){
                             </div>
                             <div className="div">
                                     <h5>Password</h5>
-                                    <input onFocus={addPass} onBlur={remPass} type="password" className="passw"/>
+                                    <input onFocus={addPass} onBlur={remPass} type="password" className="passw" required/>
                             </div>
                         </div>
 
